@@ -11,7 +11,7 @@ from PIL import Image
 #    iphonex: 0.00125
 #    iphone6: 0.00196
 #    iphone6s plus: 0.00120
-time_coefficient = 0.00120
+time_coefficient = 0.00190
 
 
 c = wda.Client()
