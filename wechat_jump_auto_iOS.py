@@ -200,11 +200,13 @@ def main():
         distance = math.sqrt(
             (board_x - piece_x) ** 2 + (board_y - piece_y) ** 2)
         jump(distance)
+        # 这里假装跳一下
+        jump(random.random())
 
         save_debug_creenshot(ts, im, piece_x, piece_y, board_x, board_y)
         backup_screenshot(ts)
         # 为了保证截图的时候应落稳了，多延迟一会儿，随机值防 ban
-        time.sleep(random.uniform(1, 5))
+        time.sleep(random.uniform(1, 1.5))
 
 
 if __name__ == '__main__':
